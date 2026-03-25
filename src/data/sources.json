@@ -1,0 +1,74 @@
+﻿[
+  {
+    "id": "lex-fridman-494",
+    "title": "Lex Fridman Podcast #494 — Jensen Huang: NVIDIA",
+    "type": "interview",
+    "date": "2026-03-22",
+    "url": "https://lexfridman.com/jensen-huang-transcript/",
+    "topics": ["scaling-laws", "management", "AGI", "consciousness", "mortality", "china", "tsmc", "token-economics"],
+    "priority": 5
+  },
+  {
+    "id": "gtc-2026",
+    "title": "GTC 2026 Keynote — Token Factory Economics",
+    "type": "keynote",
+    "date": "2026-03-16",
+    "url": "https://www.nvidia.com/gtc/keynote/",
+    "topics": ["token-economics", "vera-rubin", "agentic-ai", "openclaw", "space-computing"],
+    "priority": 5
+  },
+  {
+    "id": "gtc-2025",
+    "title": "GTC 2025 Keynote — Physical AI & Reasoning",
+    "type": "keynote",
+    "date": "2025-10-28",
+    "url": "https://singjupost.com/transcript-nvidia-ceo-jensen-huangs-keynote-at-gtc-2025/",
+    "topics": ["physical-ai", "robotics", "inference", "blackwell"],
+    "priority": 4
+  },
+  {
+    "id": "acquired-2023",
+    "title": "Acquired Podcast — NVIDIA CEO Jensen Huang",
+    "type": "interview",
+    "date": "2023-10-15",
+    "url": "https://www.acquired.fm/episodes/jensen-huang",
+    "topics": ["nvidia-history", "cuda-bet", "riva128", "founder-journey", "strategy"],
+    "priority": 5
+  },
+  {
+    "id": "caltech-2024",
+    "title": "Caltech 2024 Commencement Speech",
+    "type": "speech",
+    "date": "2024-06-14",
+    "url": "https://singjupost.com/jensen-huangs-speech-at-caltech-2024-commencement-transcript/",
+    "topics": ["resilience", "deep-learning-history", "computing-paradigm", "robotics"],
+    "priority": 4
+  },
+  {
+    "id": "ntu-2023",
+    "title": "National Taiwan University 2023 Commencement Speech",
+    "type": "speech",
+    "date": "2023-05-27",
+    "url": "https://interconnect.substack.com/p/jensen-huang-ntu-commencement-speech",
+    "topics": ["sega-story", "cuda-bet", "phone-retreat", "run-dont-walk"],
+    "priority": 5
+  },
+  {
+    "id": "60-minutes",
+    "title": "CBS 60 Minutes Interview",
+    "type": "interview",
+    "date": "2024-03-01",
+    "url": "https://www.cbsnews.com/news/meet-nvida-ceo-jensen-huang-company-powering-ai-today-60-minutes-transcript/",
+    "topics": ["ai-overview", "public-persona", "nvidia-campus"],
+    "priority": 3
+  },
+  {
+    "id": "qbitai-lex-summary",
+    "title": "量子位 — 黄仁勋暴论核弹：AGI已经实现",
+    "type": "article",
+    "date": "2026-03-24",
+    "url": "https://www.qbitai.com/2026/03/391750.html",
+    "topics": ["agi", "token-iphone", "programmer-1b", "consciousness", "mortality"],
+    "priority": 4
+  }
+]
