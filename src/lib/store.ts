@@ -30,6 +30,7 @@ interface AppState {
   sendMessage: (content: string) => Promise<void>;
   stopStreaming: () => void;
   toggleSettings: () => void;
+  setSettingsOpen: (open: boolean) => void;
   clearError: () => void;
 }
 
@@ -187,5 +188,6 @@ export const useAppStore = create<AppState>((set, get) => ({
   },
 
   toggleSettings: () => set(state => ({ isSettingsOpen: !state.isSettingsOpen })),
+  setSettingsOpen: (open: boolean) => set({ isSettingsOpen: open }),
   clearError: () => set({ error: null }),
 }));

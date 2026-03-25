@@ -13,7 +13,7 @@ export function ChatPage() {
 
   const {
     sessions, activeSessionId, isStreaming, streamingText, error,
-    sendMessage, stopStreaming, isSettingsOpen, toggleSettings, clearError, createSession,
+    sendMessage, stopStreaming, isSettingsOpen, setSettingsOpen, toggleSettings, clearError, createSession,
   } = useAppStore();
 
   const session = sessions.find(s => s.id === activeSessionId);
@@ -30,10 +30,14 @@ export function ChatPage() {
     messagesEndRef.current?.scrollIntoView({ behavior: 'smooth' });
   }, [messages.length, streamingText]);
 
-  // Auto-open settings if not configured
+  // Auto-open settings if not configured (one-shot on mount)
+  const settingsPromptedRef = useRef(false);
   useEffect(() => {
-    if (!configured && !isSettingsOpen) toggleSettings();
-  }, [configured, isSettingsOpen, toggleSettings]);
+    if (!configured && !settingsPromptedRef.current) {
+      settingsPromptedRef.current = true;
+      setSettingsOpen(true);
+    }
+  }, [configured, setSettingsOpen]);
 
   return (
     <div className="h-screen flex bg-surface-900">
@@ -93,7 +97,7 @@ export function ChatPage() {
         />
       </main>
 
-      <SettingsModal isOpen={isSettingsOpen} onClose={toggleSettings} />
+      <SettingsModal isOpen={isSettingsOpen} onClose={() => setSettingsOpen(false)} />
     </div>
   );
 }

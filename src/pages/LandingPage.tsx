@@ -33,7 +33,7 @@ export function LandingPage() {
 
   const {
     sessions, activeSessionId, isStreaming, streamingText, error,
-    sendMessage, stopStreaming, createSession, isSettingsOpen, toggleSettings, clearError,
+    sendMessage, stopStreaming, createSession, isSettingsOpen, setSettingsOpen, clearError,
   } = useAppStore();
 
   const session = sessions.find(s => s.id === activeSessionId);
@@ -58,7 +58,7 @@ export function LandingPage() {
     if (!msg || isStreaming) return;
 
     if (!configured) {
-      toggleSettings();
+      setSettingsOpen(true);
       return;
     }
 
@@ -329,7 +329,7 @@ export function LandingPage() {
         </motion.div>
       </div>
 
-      <SettingsModal isOpen={isSettingsOpen} onClose={toggleSettings} />
+      <SettingsModal isOpen={isSettingsOpen} onClose={() => setSettingsOpen(false)} />
     </div>
   );
 }
